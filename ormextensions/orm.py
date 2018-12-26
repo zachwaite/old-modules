@@ -36,6 +36,8 @@ class SplitRecordset():
         typ = self._recordset._fields[key].type
         if typ not in ('many2one', 'one2many', 'many2many'):
             return value
+        elif typ == 'many2one' and value:
+            return value
         elif typ == 'many2one' and not value:
             return (False, '')
         elif typ in ('one2many', 'many2many'):
