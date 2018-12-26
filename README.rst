@@ -8,5 +8,5 @@ publicly with the community.
 Contents
 ---------
 
-* **ormextenstions** - Utilities and Mixins for Odoo Models
+* **ormextensions** - Utilities and Mixins for Odoo Models
 
