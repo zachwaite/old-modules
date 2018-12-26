@@ -47,4 +47,9 @@ Some examples:
     >>> partners_by_type.apply(lambda rs: max(rs.mapped('id')))
     # [(('company',), 15), (('person',), 33)]
 
+    # Count individual partners, grouped by company, with 1 read
+    >>> self.env['res.partner'].search([('is_company', '=', False)]).split(['parent_id']).apply(len) 
+    #[(((False, ''),), 3), (((1, 'YourCompany'),), 2), (((9, 'Wood Corner'),), 3),
+    # (((10, 'Deco Addict'),), 3), (((11, 'Gemini Furniture'),), 4), (((12, 'Ready Mat'),), 7),
+    # (((13, 'The Jackson Group'),), 2), (((14, 'Azure Interior'),), 3), (((15, 'Lumber Inc'),), 1)]
 
