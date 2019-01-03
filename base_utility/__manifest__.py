@@ -1,7 +1,7 @@
 {
-    'name': "XML Record Import",
+    'name': "Base Utility",
 
-    'summary': """Import Odoo data records in native XML format""",
+    'summary': """Expose useful utility methods over RPC""",
 
     'author': "Waite Perspectives, LLC - Zach Waite",
     'website': "https://github.com/zachwaite/perspectives",
@@ -10,4 +10,8 @@
     'version': '0.1',
 
     'depends': ['base'],
+
+    'data': [
+        'security/ir.model.access.csv',
+    ],
 }

@@ -9,5 +9,5 @@ Contents
 ---------
 
 * **ormextensions** - Utilities and Mixins for Odoo Models
-* **base_xml_import** - Import XML Files
+* **base_utility** - Expose useful commands over rpc
 
